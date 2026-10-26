@@ -257,25 +257,6 @@ Click the **"Lab Demo Guide"** button in the app header or follow these steps:
 11. **Test Duplicate Constraint:** Try registering another student with `aarav.sharma@jaipur.manipal.edu`. Show the MySQL `ER_DUP_ENTRY` error response.
 12. **Test Foreign Key Restriction:** Try deleting an author who has books in the library. Show the `ON DELETE RESTRICT` error message.
 
----
-
-## 8. Viva Preparation: RDBMS Concepts Summary
-
-- **Primary Key (PK):** Uniquely identifies a tuple; cannot be NULL. Enforces entity integrity.
-- **Foreign Key (FK):** Enforces referential integrity between child and parent relations (`ON DELETE RESTRICT`).
-- **UNIQUE Constraint:** Guarantees uniqueness for candidate keys (e.g., student email, book ISBN, return issue_id).
-- **CHECK Constraint:** Enforces domain validation rules directly in the database engine.
-- **Transactions & ACID Properties:**
-  - *Atomicity:* All statements in a transaction succeed, or all are rolled back.
-  - *Consistency:* Database transitions only between valid states satisfying all constraints.
-  - *Isolation:* Concurrency control via row locks (`SELECT ... FOR UPDATE`) prevents dirty/lost updates.
-  - *Durability:* Committed changes are written to the InnoDB redo log and survive server restarts.
-- **Normalization (1NF &rarr; 3NF):**
-  - *1NF:* Atomic attribute values, no repeating multi-valued columns.
-  - *2NF:* No partial functional dependencies on composite candidate keys.
-  - *3NF:* No transitive dependencies (author nationality belongs in `Author`, not repeated in `Book`).
-
----
 
 ## 9. Current Environment Status & Honest Disclosure
 
