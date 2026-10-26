@@ -1,0 +1,20 @@
+{
+  "name": "rdbms-endterm-project-lab",
+  "version": "1.0.0",
+  "description": "Library Management System for RDBMS Lab Demo - Manipal University Jaipur",
+  "scripts": {
+    "server": "npm run start --prefix server",
+    "client": "npm run dev --prefix client",
+    "db:init": "node server/scripts/initDb.js",
+    "test": "node server/tests/run_tests.js"
+  },
+  "keywords": [
+    "rdbms",
+    "mysql",
+    "library-management",
+    "react",
+    "express"
+  ],
+  "author": "Department of Computer Science & Engineering, Manipal University Jaipur",
+  "license": "ISC"
+}
